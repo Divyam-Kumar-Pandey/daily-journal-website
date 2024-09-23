@@ -1,0 +1,24 @@
+<%- include('partials/header') -%>
+
+    <section class="body">
+        <div class="heading">
+            <h1><%= title %></h1>
+            <div class="options">
+                <form action="/edit" method="post"  id="editForm" >
+                    <input type="hidden" name="title" value="<%= title %>">
+                    <input type="hidden" name="content" value="<%= content %>">
+                    <span type = "submit" class="material-symbols-outlined" title = "Edit Note" onclick="document.getElementById('editForm').submit();">edit_note</span>
+                </form>
+                <form action="/delete" method="post" id="deleteForm">
+                    <input type="hidden" name="title" value="<%= title %>">
+                    <input type="hidden" name="content" value="<%= content %>">
+                        <span class="material-symbols-outlined" title="Delete Note" onclick="document.getElementById('deleteForm').submit();">delete</span>
+                    
+                </form>
+            </div>
+        </div>
+        <pre><%= content %>
+        </pre>
+    </section>
+
+<%- include('partials/footer') -%>

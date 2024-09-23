@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background-color: #faf6fa;
+    color: #9c989c;
+    margin : 0 0 0 0;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    width: 100%;
+}
+
+
+#title{
+    padding-left: 10rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100 !important;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading form{
+    display: inline-block;
+}
+
+.material-symbols-outlined{
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: #74c9b7;
+    cursor: pointer;
+}
+
+.pages{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 5%;
+}
+
+.pages a{
+    text-decoration: none;
+    color: #9c989c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.pages a:hover{
+    color: #74c9b7;
+}
+
+.footer{
+    background-color: #74c9b7;
+    color: #faf6fa;
+    margin : 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.body {
+    margin : 0 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.body h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.body pre{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.body p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.body input, .body label{
+    margin: 0.5rem 0;
+}
+
+.body button {
+    background-color: #74c9b7;
+    color: #faf6fa;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: min-content;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.body a{
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.add-button{
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    background-color: #74c9b7;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 3em;
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-button:hover{
+    /* slightly darker shade and increase size */
+    background-color: #5cbfa3;
+    transform: scale(1.1);
+    /* slow animantion */
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.add-button a{
+    text-decoration: none;
+    color: #faf6fa;
+    cursor: default;
+
+}
+
+

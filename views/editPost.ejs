@@ -1,0 +1,18 @@
+<%- include('partials/header') -%>
+
+    <section class="body">
+        <h1>Edit Post</h1>
+    <form class="body" action="/editPost" method="post">
+        <label for="">Title</label>
+        <input type="text" name="newTitle" value="<%= title %>">
+        <input type="hidden" name="oldTitle" value="<%= title %>">
+        <label for="">Post</label>
+        <textarea name="postContent" id="" cols="30" rows="10" ><%= content %></textarea>
+        <div>
+        <button type="submit">Save Changes</button>
+        <button type="button" onclick="location.href='/'">Cancel</button>
+    </div>
+    </form>
+    </section>
+
+<%- include('partials/footer') -%>
